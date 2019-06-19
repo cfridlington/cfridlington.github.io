@@ -131,7 +131,7 @@
 	
 	<section class="container">
 	
-		<div class="content annotation">
+		<div class="content annotation" id="annotation1">
 			<h2>Annotation 1</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet gravida tortor. Sed pellentesque, nisi sed dapibus mollis, felis odio tincidunt nisl, eget congue justo odio in lorem. Nunc ac urna quis mi vestibulum tempor at in lorem. Nulla dignissim semper lacus, a ullamcorper dolor tincidunt laoreet.</p>
 		</div>
@@ -140,7 +140,7 @@
 	
 	<section class="container">
 	
-		<div class="content annotation">
+		<div class="content annotation" id="annotation2">
 			<h2>Annotation 2</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet gravida tortor. Sed pellentesque, nisi sed dapibus mollis, felis odio tincidunt nisl, eget congue justo odio in lorem. Nunc ac urna quis mi vestibulum tempor at in lorem. Nulla dignissim semper lacus, a ullamcorper dolor tincidunt laoreet.</p>
 		</div>
@@ -149,7 +149,7 @@
 	
 	<section class="container">
 	
-		<div class="content annotation">
+		<div class="content annotation" id="annotation3">
 			<h2>Annotation 3</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet gravida tortor. Sed pellentesque, nisi sed dapibus mollis, felis odio tincidunt nisl, eget congue justo odio in lorem. Nunc ac urna quis mi vestibulum tempor at in lorem. Nulla dignissim semper lacus, a ullamcorper dolor tincidunt laoreet.</p>
 		</div>
@@ -192,8 +192,30 @@
 	vid.addEventListener('loadedmetadata', function() {
   		setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
 	});
-
-
+	
+	//Annotations
+	
+	annotation1 = document.getElementById('annotation1');
+	annotation2 = document.getElementById('annotation2');
+	annotation3 = document.getElementById('annotation3');
+	
+	heightOfVideo = Math.floor(vid.duration) * playbackConst;
+	
+	//Time during which you want the annotation in the video
+	timeOfAnnotation1 = 8;
+	timeOfAnnotation2 = 12;
+	timeOfAnnotation3 = 14;
+	
+	//Convert Annotation time to positioning height
+	annotation1.style.position = "absolute";
+	annotation2.style.position = "absolute";
+	annotation3.style.position = "absolute";
+	
+	annotation1.style.top = timeOfAnnotation1 * playbackConst + "px";
+	annotation2.style.top = timeOfAnnotation2 * playbackConst + "px";
+	annotation3.style.top = timeOfAnnotation3 * playbackConst + "px";
+	
+	
 	// Use requestAnimationFrame for smooth playback
 	function scrollPlay(){  
   		var frameNumber  = window.pageYOffset/playbackConst;
