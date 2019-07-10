@@ -57,11 +57,11 @@ h2 {
 }
 
 #content-1 {
-	left: calc(20vw + 50px);
+	left: calc(15vw + 50px);
 }
 
 #point-1 {
-	left: 20vw;
+	left: 15vw;
 	background-image: url("Resources/Pokemon-Go.jpg");
 	background-size: cover;
 	background-position: center;
@@ -70,15 +70,15 @@ h2 {
 #vertical-line-1 {
 	background-color: #0097F0;
 	opacity: 0;
-	left: calc(22vw - 5px);
+	left: calc(15vw + 2vw - 5px);
 }
 
-#point-1:hover {
+#point-1:hover:active {
 	border: 4px solid #0097F0;
 	height: 6vw;
 	width: 6vw;
 	top: calc(50vh - 3vw);
-	left: calc(20vw - 1.5vw);
+	left: calc(15vw - 1.5vw);
 }
 
 #point-1:hover~#content-1 {
@@ -90,8 +90,40 @@ h2 {
 	height: 175px;
 }
 
+/* Point 2 */
+
+#content-2 {
+	left: calc(30vw + 50px);
+}
+
 #point-2 {
-	left: 40vw;
+	left: 30vw;
+	background-image: url("Resources/IMAX-VR.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+#vertical-line-2 {
+	background-color: #f04f5f;
+	opacity: 0;
+	left: calc(30vw + 2vw - 5px);
+}
+
+#point-2:hover {
+	border: 4px solid #f04f5f;
+	height: 6vw;
+	width: 6vw;
+	top: calc(50vh - 3vw);
+	left: calc(30vw - 1.5vw);
+}
+
+#point-2:hover~#content-2 {
+	opacity: 1;
+}
+
+#point-2:hover~#vertical-line-2 {
+	opacity: 1;
+	height: 175px;
 }
 
 /* 2016 */
@@ -101,7 +133,7 @@ h2 {
 	background-color: #fff;
 	position: absolute;
 	top: calc(50vh - 40px);
-	left: 10vw;
+	left: 7.5vw;
 	color: #0097F0;
 }
 
@@ -110,8 +142,8 @@ h2 {
 	background-color: #fff;
 	position: absolute;
 	top: calc(50vh - 40px);
-	left: 28vw;
-	color: #0097F0;
+	left: 22vw;
+	color: #f04f5f;
 }
 
 #label-2018 {
