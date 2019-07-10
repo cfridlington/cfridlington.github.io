@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Air Interactive Editor</title>
+
+<link rel="stylesheet" href="Styles.css">
+<link rel="stylesheet" href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css">
+<link rel="stylesheet" href="https://use.typekit.net/wex8qtm.css">
+	
+</head>
+
+<body>
+	
+	<div class="header"><img class="arrowstreet-logo" src="Arrowstreet-Logo.svg" alt="Arrowstreet Logo"></div>
+	
+	<section class="section-padded">
+		
+		<div class="grid-container-1">
+		
+			<div class="grid-item-padded">
+				
+				<h3>Interactive Content Creator</h3>
+				
+				<form class="contact-form">
+					
+					<input type="text" name="name" placeholder="Title of Experience"><br>
+					
+					<input type="url" name="url" placeholder="Video Url hosted on Github or SquareSpace"><br>
+					
+					<input type="number" name="annotations" placeholder="1" step="1" min="0" onClick="updateForm()">
+					
+					<div id="annotations">
+						
+						<h5>Annotation 1</h5>
+					
+						<input type="text" name="subject" placeholder="Annotation Title"><br>
+						
+						<input class="align" type="button" name="align-left" value="Align Left">
+						<input class="align" type="button" name="align-left" value="Align Center">
+						<input class="align" type="button" name="align-left" value="Align Right">
+					
+						<textarea id="input-paragraph-1" name="text" placeholder="Paragraph Description"></textarea><br>
+					
+					</div>
+					
+					<input class="form-submit" type="button" name="submit" value="Generate Code" onClick="submitForm()">
+					
+				</form>
+				
+				<div id="generated-code">
+					
+					<h2>Generated Code</h2>
+					
+					<textarea id="result" class="" name="text" placeholder="Generated Code"></textarea>
+				
+				</div>
+				
+				
+			</div>
+			
+		</div>
+		
+	</section>	
+	
+	<script src="Script.js"></script>
+
+</body>
+</html>

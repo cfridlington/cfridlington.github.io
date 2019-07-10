@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	
+	font-family: ff-meta-correspondence-web-p,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color:#575757;
+	font-size: 20px;
+	
+}
+
+
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+section {
+	
+	margin: 0px 10px 10px 10px;
+	align-content: center;
+}
+
+.section-padded {
+	padding-left: 7.5vw;
+	padding-right: 7.5vw;
+}
+
+.header {
+	text-align: center;
+}
+
+.arrowstreet-logo {
+		width: 15%;
+		padding: 2%;
+	}
+
+/* Grids */
+
+.grid-container {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-1 {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-2 {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-3 {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-4 {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-custom {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 41.9% 57.1%;
+	grid-gap: 10px;
+}
+
+.grid-item {
+	overflow: hidden;
+	float: left;
+	padding: 0px, 0px, 0px, 0px;
+}
+
+.grid-item-padded {
+	overflow: hidden;
+	float: left;
+	padding: 40px;
+}
+
+.grid-item-padded i {
+	font-size: 75px;
+	color: #221e1f;
+}
+
+/* Forms */
+
+.contact-form input {
+	background: #f5f5f5;
+	border: none;
+	padding: 15px;
+	padding-left: 20px;
+	margin-bottom: 20px;
+	border-radius: 50vh;
+	width: 90%;
+	
+}
+
+.contact-form textarea {
+	background: #f5f5f5;
+	border: none;
+	padding: 15px;
+	padding-left: 20px;
+	margin-bottom: 20px;
+	border-radius: 25px;
+	width: 90%;
+	min-height: 200px;
+	resize: none;
+}
+
+.form-submit {
+	background: #f5f5f5;
+	border: none;
+	padding: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	border-radius: 25px;
+	max-width: 120px;
+	cursor: pointer;
+	transition: background-color .4s; 
+}
+
+.form-submit:hover {
+	background-color: #E6E6E6;
+}
+
+.align {
+	float: left;
+	max-width: 10%;
+}
+
+#generated-code {
+	display: none;
+}
+
+#result {
+	display: none;
+	background: #f5f5f5;
+	border: none;
+	padding: 15px;
+	padding-left: 20px;
+	margin-bottom: 20px;
+	border-radius: 25px;
+	width: 90%;
+	min-height: 200px;
+	resize: none;
+}
