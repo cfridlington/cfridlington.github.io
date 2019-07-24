@@ -50,6 +50,7 @@ var frameNumber = 0, // start video at frame 0
   		var frameNumber  = window.pageYOffset/playbackConst;
   		vid.currentTime  = frameNumber;
   		window.requestAnimationFrame(scrollPlay);
+		vid.attr("autoplay", "false");
 	}
 
 	window.requestAnimationFrame(scrollPlay);
@@ -58,17 +59,17 @@ var frameNumber = 0, // start video at frame 0
 
 var loadingIndicator = document.getElementById("loading-indicator");
 
-video.addEventListener('waiting', function() {
+vid.addEventListener('waiting', function() {
 	loadingIndicator.style.display = "block";
 	playPauseButton.style.display = "none";
 });
 
-video.addEventListener('stalled', function() {
+vid.addEventListener('stalled', function() {
 	loadingIndicator.style.display = "block";
 	playPauseButton.style.display = "none";
 });
 
-video.addEventListener('canplay', function() {
+vid.addEventListener('canplay', function() {
 	loadingIndicator.style.display = "none";
 	playPauseButton.style.display = "block";
 });
