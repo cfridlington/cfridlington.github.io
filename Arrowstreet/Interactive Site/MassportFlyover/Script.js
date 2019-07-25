@@ -25,11 +25,11 @@ var frameNumber = 0, // start video at frame 0
 	heightOfVideo = Math.floor(vid.duration) * playbackConst;
 	
 	//Time during which you want the annotation in the video
-	timeOfAnnotation1 = 31/4;
-	timeOfAnnotation2 = 44/4;
-	timeOfAnnotation3 = 56/4;
-	timeOfAnnotation4 = 77/4;
-	timeOfAnnotation5 = 80/4;
+	timeOfAnnotation1 = 3;
+	timeOfAnnotation2 = 4;
+	timeOfAnnotation3 = 6;
+	timeOfAnnotation4 = 7;
+	timeOfAnnotation5 = 10;
 	
 	//Convert Annotation time to positioning height
 	annotation1.style.position = "absolute";
@@ -47,10 +47,11 @@ var frameNumber = 0, // start video at frame 0
 	
 	// Use requestAnimationFrame for smooth playback
 	function scrollPlay(){  
-  		var frameNumber  = window.pageYOffset/playbackConst;
-  		vid.currentTime  = frameNumber;
+  		var frameNumber  = window.pageYOffset/(playbackConst * 24);
+  		vid.currentTime  = frameNumber * 24;
+		console.log(frameNumber);
   		window.requestAnimationFrame(scrollPlay);
-		vid.attr("autoplay", "false");
+		document.querySelector("#v0").autoplay = "false"
 	}
 
 	window.requestAnimationFrame(scrollPlay);
