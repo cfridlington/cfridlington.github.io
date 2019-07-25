@@ -47,8 +47,8 @@ var frameNumber = 0, // start video at frame 0
 	
 	// Use requestAnimationFrame for smooth playback
 	function scrollPlay(){  
-  		var frameNumber  = window.pageYOffset/(playbackConst * 24);
-  		vid.currentTime  = frameNumber * 24;
+  		var frameNumber  = window.pageYOffset/playbackConst;
+  		vid.currentTime  = frameNumber;
 		console.log(frameNumber);
   		window.requestAnimationFrame(scrollPlay);
 		document.querySelector("#v0").autoplay = "false"
