@@ -1,0 +1,21 @@
+[
+	
+	{
+		"Student" : "Christopher Fridlington",
+		"Teacher" : "Amy Wilson",
+		Message : "Ms. Wilson has been a teacher both inside and outside of the classroom throughout my time at New Hampton. Over my four years I had here for a total of five terms in photography, animation, Flej, and IB Art. Perhaps more impressively though, she helped me plan not one but two project week trips. Thank you for all you did for me and all you do for others."
+	},
+	
+	{
+		"Student" : "Ben Downing",
+		"Teacher" : "Justin Joslin",
+		Message : "Mr. Joslin has lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla."
+	},
+	
+	{
+		"Student" : "Augusta Truesdale",
+		"Teacher" : "B Cornog",
+		Message : "Ms. Cornog has lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla."
+	}
+	
+]

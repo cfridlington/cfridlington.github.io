@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Created by Christopher Fridlington */
+/* New Hampton School Development Office */
+
+
+/* Master Styles */
+
+html {
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-color: #000;
+	color: #C4C4C4;
+}
+
+h1 {
+	font-size: 150%;
+	color: #fff;
+}
+
+/* Message Container */
+
+.Message-Container {
+	padding-left: 1px;
+	margin: 10vw;
+	width: 30vw;
+	float: left;
+}
+
+.Message-Container a img {
+	height: 20px;
+	float: left;
+	position: relative;
+	top: 15px;
+	left: 10px;
+}
+
+.Message-Container a p {
+	float: left;
+}
+
+.Message-Container a:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+/* Teacher Container */
+
+.Teacher-Container {
+	width: 30vw;
+	float: left;
+	margin: 40px;
+}
+
+.Teacher-Container img {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-radius: 20px;
+	animation-name: scaleDown;
+	animation-duration: 1s;
+	transform: scale(1);
+}
+
+.Teacher-Container p {
+	margin-left: 10%;
+	animation-name: fadeOut;
+	animation-duration: 1s;
+	opacity: 0;
+}
+
+.Teacher-Container:hover p {
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	opacity: 1;
+}
+
+.Teacher-Container:hover img {
+	animation-name: scaleUp;
+	animation-duration: 1s;
+	transform: scale(1.1);
+}
+
+.Teacher-Container:hover
+
+.Teacher-Name {
+	font-weight: 700;
+	color: #fff;
+}
+
+.Teacher-Message {
+	margin-top: 40px;
+}
+
+.Student-Name {
+	font-weight: 500;
+	color: #fff;
+	text-align: right;
+}
+
+/* Animations */
+
+@Keyframes scaleUp {
+	from {transform: scale(1)}
+	to {transform: scale(1.1)}
+}
+
+@Keyframes scaleDown {
+	from {transform: scale(1.1)}
+	to {transform: scale(1)}
+}
+
+@Keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@Keyframes fadeOut {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
